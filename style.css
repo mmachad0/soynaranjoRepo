@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: whitesmoke;
+}
+
+.title{
+    font-style: normal; 
+    font-size: 500%; 
+    font-weight: bold; 
+    font-family: 'Calligraffitti', cursive; 
+    color:black; 
+    text-align: center;
+}
+
+.subTitle{
+    font-style: oblique; 
+    font-size: 250%; 
+    font-family: 'Calligraffitti', cursive;
+    color: black; 
+    text-align: center;
+}
+
+/* LOGO */
+.logoDisp{
+    font-size: 75px;
+    /* font-family: 'GFS Didot', serif; */
+    font-family: 'Calligraffitti', cursive; 
+    color: #d52432;
+    text-shadow: 2px 2px 4px black;
+    text-decoration: none;
+}
+
+.logoDisp:hover{
+    color: #164688;
+}
+/* FIN DE LOGO */
+
+/* NAV */
+.menu{
+    display: flex;
+    flex-direction: column;
+    list-style: none; 
+}
+
+.menu a{
+    /* font-family: 'GFS Didot', serif; */
+    font-family: 'Calligraffitti', cursive; 
+    font-size: 25px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px grey;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.menu a:hover{
+    color:black
+}
+/* FIN DE NAV */
+
+/* CLIPS AND ABOUT */
+
+.clipsFormat{
+    display: flex;
+    align-items: flex-start;
+}
+  
+.clipsAndAbout{
+    flex: 1;
+    padding: 10px;
+}
+
+.clips{
+    font-size: 200%; 
+    font-family: 'Calligraffitti', cursive;
+    color: black; 
+    background-color:whitesmoke;
+    text-decoration: none;
+    padding: 10%;
+}
+/* FIN DE CLIPS AND ABOUT */
+
+/* CONTACT ME */
+
+.contact{
+    text-align: right; 
+    background-color: whitesmoke;
+}
+/* FIN DE CONTACT ME */
+
+/* TWITCH AND RECOMMENDED */
+
+.twitchAndRecommendedFormat{
+    display: flex;
+    align-items: flex-start;
+}
+
+.recommended{
+    display: flex;
+    background-color: whitesmoke;
+    font-size: 200%; 
+    font-family: 'Calligraffitti', cursive;
+    color: black;
+    padding: 10%;
+}
+/* FIN DE TWITCH AND RECOMMENDED */
+
+/* FOOTER */
+.textFooter{
+    text-align: left; 
+    background-color: whitesmoke;
+    font-size: 200%; 
+    font-family: 'Calligraffitti', cursive;
+    color: black
+}
+
+.redesPos{
+    text-align: right; 
+    background-color: whitesmoke
+}
+
+.redes{
+    display: inline; 
+    font-size: 200%;
+}
+/* FIN DE FOOTER */
+
+.desc{
+    text-align: left;
+    font-size: 200%; 
+    font-family: 'Calligraffitti', cursive;
+    color: black; 
+    background-color:whitesmoke
+}
+
+.imgPerfil{
+    text-align: right; 
+    background-color: whitesmoke;
+}
+
+.uniqueTable{
+    text-align: center; 
+    font-size: 200%; 
+    font-family: 'Calligraffitti', cursive;
+    color: black; 
+    background-color:whitesmoke
+}
+
+.detail{
+    text-align: center; 
+    font-size: 200%; 
+    font-family: 'Calligraffitti', cursive;
+    color: black; 
+    background-color:whitesmoke
+}
+
+.descCredits{
+    text-align: center;
+    font-size: 200%; 
+    font-family: 'Calligraffitti', cursive;
+    color: black; 
+    background-color:whitesmoke
+}
+
+.titleBox{
+    border: none;
+    border-radius: 40px 10px;
+    background: rgb(245,245,245);
+    background: linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(226,164,255,1) 65%, rgba(12,0,107,1) 97%);
+    width: 700px;
+    height: 140px;
+    padding: 2px 60px 2px 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* GRIIIIIIIIIID */
+
+.layoutPage{
+    display: grid;
+    grid-template-areas:
+      "nav header header"
+      "nav clipsAndAbout contactMe"
+      "nav twitchAndRecommended contactMe"
+      "nav footer footer";
+    grid-template-rows: 15% 35% 35% 15%; 
+    grid-template-columns: 10% 70% 20%;
+ }
+ .format{
+    border: 1px solid black;
+ }
+ header{
+    grid-area: header;
+ }
+ nav{
+    grid-area: nav;
+ }
+ .clipsFormat{
+    grid-area: clipsAndAbout;     
+ }
+ aside{
+    grid-area: contactMe;
+ }
+ .twitchAndRecommendedFormat{
+    grid-area: twitchAndRecommended;    
+ }
+ footer{
+    grid-area: footer;
+ }
+ 
